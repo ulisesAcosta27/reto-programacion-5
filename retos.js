@@ -11,7 +11,7 @@ devolverPrimerElemento(['e1', 'e2', 'e3', 'e4', 'e5'])
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  const resultado = array[4];
+  const resultado = array[-1];
   console.log(resultado)
 }
 devolverUltimoElemento(['e1', 'e2', 'e3', 'e4', 'e5'])
@@ -164,7 +164,6 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
 }
-mesesDelAño()
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
