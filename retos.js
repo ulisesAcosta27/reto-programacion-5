@@ -45,6 +45,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   array.push(elemento)
   console.log(array);
 }
+agregarItemAlFinalDelArray(['e1', 'e2', 'e3', 'e4', 'e5'], 'e6')
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -74,7 +75,6 @@ function arrayContiene(array, elemento) {
   const respuestaFrase = array.includes(elemento);
   console.log(respuestaFrase)
 }
-
 arrayContiene(['e1', 'e2', 'e3', 'e4', 'e5'], 'e3')
 
 function agregarNumeros(numeros) {
@@ -197,7 +197,6 @@ function breakStatement(numero) {
   console.log(numerosBases)
   console.log(numerosMultiplicados);
 }
-
 breakStatement()
 
 function continueStatement(numero) {
