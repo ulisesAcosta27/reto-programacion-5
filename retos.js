@@ -98,7 +98,7 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  let numeroMayor = Math.max(...numeros);
+  let numeroMayor = Math.max(...numeros); //operador rest = spread
   return numeroMayor;
 }
 numeroMasGrande([5, 6, 7, 8, 9])
@@ -122,8 +122,7 @@ multiplicarArgumentos(2, 3)
 function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
-
+  return arreglo.filter((item) => item > 18).length;
 }
 cuentoElementos([8, 9, 18, 19, 20])
 
@@ -148,6 +147,7 @@ function empiezaConNueve(n) {
   }else{
     return false
   }
+  // n.toString().charAt(0) == 9
 }
 empiezaConNueve(92)
 
@@ -170,7 +170,12 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
+  const resultado = array.filter((mes) =>{
+    if(mes == 'Enero' || mes == 'Marzo' || mes == 'Noviembre'){
+      return mes
+    }
+  }) 
+  return resultado.length !== 3 ? 'No se encontraron los meses pedidos' : resultado 
 }
 
 function mayorACien(array) {
@@ -190,6 +195,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  
 }
 
 function continueStatement(numero) {
